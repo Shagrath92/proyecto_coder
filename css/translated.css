@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Creepster&family=Poppins:wght@300;400;600;700&display=swap");
+/*MISC*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+/*PARTIALS*/
+/*PAGES*/
