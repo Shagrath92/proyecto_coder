@@ -1,2 +1,105 @@
-
+/*menu navegacion*/
+nav {
+    background-color: #030338;
+    background-image: linear-gradient(240deg, #030338 88% 10%, #030338 92% 10%, #030338 97% 9%);
+    height: 80px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+  .logo {
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+  
+    li {
+      margin: 0 5px;
+  
+      a {
+        color: map-get($map: $palette, $key:'aleatory-one' );
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-family: 'Creepster';
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  li a {
+    &.active, &:hover {
+      background: map-get($map: $palette, $key:'primary');
+      box-shadow: 0 0 10px map-get($map: $palette, $key:'secundary'), 0 0 40px map-get($map: $palette, $key:'secundary'), 0 0 80px map-get($map: $palette, $key:'secundary');
+      color: map-get($map: $palette, $key:'aleatory-one');
+    }
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: map-get($map: $palette, $key:'aleatory-one');
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* media queries menu */
+  @media (max-width: 952px) {
+    nav ul li a {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: flex;
+    }
+  
+    nav {
+      padding: 0 30px;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: map-get($map: $palette, $key:'buttons' );
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 8rem;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      flex-direction: column;
+      z-index: 10;
+    }
+  
+    nav ul li {
+      margin: 20px 0;
+  
+      a {
+        font-size: 3rem;
+      }
+    }
+  
+    li a {
+      &:hover, &.active {
+        background: map-get($map: $palette, $key:'secundary');
+        color: map-get($map: $palette, $key:'primary');
+      }
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }

@@ -30,17 +30,10 @@ html {
 
 /*barra de mavegacion navegacion y banner principal*/
 nav {
-    background-image: linear-gradient(45deg,
-            hsl(240deg 88% 10%) 0%,
-            hsl(241deg 92% 10%) 11%,
-            hsl(242deg 97% 9%) 22%,
-            hsl(242deg 100% 9%) 33%,
-            hsl(241deg 100% 9%) 44%,
-            hsl(241deg 100% 9%) 56%,
-            hsl(240deg 100% 9%) 67%,
-            hsl(240deg 100% 9%) 78%,
-            hsl(240deg 100% 8%) 89%,
-            hsl(0deg 0% 0%) 100%);
+ 
+    background-color: #030338;
+    background-image: linear-gradient(240deg, #030338 88% 10%, #030338 92% 10%,  #030338  97% 9%);
+        
     height: 80px;
     width: 100%;
     padding: 0 50px;
@@ -158,17 +151,17 @@ li a:hover {
 
     0%,
     20% {
-        background-image: url("../images/banner-imagen-uno.png");
+        background-image: url('../images/banner-imagen-uno.png');
     }
 
     25%,
     45% {
-        background-image: url("../images/banner-imagen-dos.png");
+        background-image: url('../images/banner-imagen-dos.png');
     }
 
     50%,
     70% {
-        background-image: url("../images/banner-imagen-tres.png");
+        background-image: url('../images/banner-imagen-tres.png');
     }
 
     75%,
@@ -331,95 +324,6 @@ li a:hover {
 
     .card {
         margin: 15px;
-    }
-}
-
-/*footer*/
-.footer {
-    width: 100%;
-    background-image: linear-gradient(45deg,
-            hsl(240deg 88% 10%) 0%,
-            hsl(241deg 92% 10%) 11%,
-            hsl(242deg 97% 9%) 22%,
-            hsl(242deg 100% 9%) 33%,
-            hsl(241deg 100% 9%) 44%,
-            hsl(241deg 100% 9%) 56%,
-            hsl(240deg 100% 9%) 67%,
-            hsl(240deg 100% 9%) 78%,
-            hsl(240deg 100% 8%) 89%,
-            hsl(0deg 0% 0%) 100%);
-}
-
-.footer .group-one {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
-.footer .group-one .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer .group-one .box figure img {
-    width: 250px;
-}
-
-.footer .group-one .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 1.5em;
-}
-
-.footer .group-one .box p {
-    color: #efefef;
-    margin-bottom: 10px;
-}
-
-.footer .group-one .social-media a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #950e8e;
-    text-align: center;
-    transition: all 300ms ease;
-}
-
-.footer .group-one .social-media a:hover {
-    color: var(--color-aleatory2);
-}
-
-.footer .group-two {
-    background-color: #0a1a2a;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-}
-
-.footer .group-two small {
-    font-size: 1.5em;
-}
-
-/* media queries footer */
-
-
-@media screen and (max-width:800px) {
-    .footer .group-one {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
     }
 }
 
@@ -742,4 +646,84 @@ li a:hover {
 
 .card-shop:hover .back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+/*footer*/
+.footer {
+    background-color: #030338;
+    background-image: linear-gradient(240deg, #030338 88% 10%, #030338 92% 10%,  #030338  97% 9%);
+        
+}
+
+.footer .group-one {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .group-one .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .group-one .box figure img {
+    width: 250px;
+}
+
+.footer .group-one .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.footer .group-one .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer .group-one .social-media a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #950e8e;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .group-one .social-media a:hover {
+    color: var(--color-aleatory2);
+}
+
+.footer .group-two {
+    background-color: #050850;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .group-two small {
+    font-size: 1.5em;
+}
+
+/* media queries footer */
+
+
+@media screen and (max-width:800px) {
+    .footer .group-one {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
