@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Creepster&family=Poppins:wght@300;400;600;700&display=swap");
 /*MISC*/
+/*maps*/
+/*mixins*/
 * {
   padding: 0;
   margin: 0;
@@ -126,7 +128,7 @@ li a.active, li a:hover {
       text-align: center;
       transition: all 300ms ease; }
       .footer .group-one .social-media a:hover {
-        color: var(--color-aleatory2); }
+        color: #ffc721; }
   .footer .group-two {
     background-color: #050850;
     padding: 15px 10px;

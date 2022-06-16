@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Creepster&family=Poppins:wght@300;400;600;700&display=swap");
 
 /*MISC*/
+
+@import "./misc/variants.scss";
+@import "./misc/mixin.scss";
 @import "./misc/normalize.scss";
-@import "./misc/variables.scss";
 @import "./misc/animations.scss";
+
 
 /*PARTIALS*/
 

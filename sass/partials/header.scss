@@ -1,7 +1,6 @@
 /*menu navegacion*/
 nav {
-    background-color: #030338;
-    background-image: linear-gradient(240deg, #030338 88% 10%, #030338 92% 10%, #030338 97% 9%);
+    @include gradient;
     height: 80px;
     width: 100%;
     padding: 0 50px;
@@ -39,7 +38,9 @@ nav {
       background: map-get($map: $palette, $key:'primary');
       box-shadow: 0 0 10px map-get($map: $palette, $key:'secundary'), 0 0 40px map-get($map: $palette, $key:'secundary'), 0 0 80px map-get($map: $palette, $key:'secundary');
       color: map-get($map: $palette, $key:'aleatory-one');
+     
     }
+
   }
   
   .checkbtn {
