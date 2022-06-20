@@ -1,16 +1,20 @@
+/*variables*/
+$color-primary: #1aff0e;
+$color-secundary: #00bbf9;
+$-color-buttons: #240046;
+$color-aleatory: #ffffff;
+$color-aleatory2: #ffc721;
+$color-aleatory-transparent1: #870bc049;
+$color-aleatory4: rgb(0, 0, 0);
 
 /*maps*/
-$palette:  (
-'primary': #1aff0e,
-'secundary':  #00bbf9,
-'buttons':  #240046,
-'aleatory-one': #ffffff,
-'aleatory-two': #ffc721,
-'aleatory-three': #870bc049,
-'aleatory-five' :rgb(0, 0, 0),
-'placeholder': #130bf0
-
-)
-
-
-
+$palette: (
+    "primary": #1aff0e,
+    "secundary": #00bbf9,
+    "buttons": #240046,
+    "aleatory-one": #ffffff,
+    "aleatory-two": #ffc721,
+    "aleatory-three": #870bc049,
+    "aleatory-five": rgb(0, 0, 0),
+    "placeholder": #130bf0,
+);

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Creepster&family=Poppins:wght@300;400;600;700&display=swap");
 /*MISC*/
+/*variables*/
 /*maps*/
 /*mixins*/
 * {
@@ -11,6 +12,20 @@
 
 html {
   font-size: 62.5%; }
+
+@keyframes banner {
+  0%,
+  20% {
+    background-image: url("../images/banner-imagen-uno.png"); }
+  25%,
+  45% {
+    background-image: url("../images/banner-imagen-dos.png"); }
+  50%,
+  70% {
+    background-image: url("../images/banner-imagen-tres.png"); }
+  75%,
+  100% {
+    background-image: url("../images/banner-imagen-cuatro.png"); } }
 
 /*PARTIALS*/
 /*menu navegacion*/
@@ -146,6 +161,306 @@ li a.active, li a:hover {
     padding: 35px 0px; } }
 
 /*PAGES*/
+/*banner-inicio*/
+.banner {
+  width: 100%;
+  height: 700px;
+  animation: banner 35s infinite linear;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 10em; }
+
+.capa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(84, 16, 231, 0.24); }
+
+.info {
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  text-align: left; }
+  .info h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-family: 'Alfa Slab One', cursive;
+    position: relative; }
+  .info p {
+    color: #ffffff;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem; }
+  .info a {
+    color: #ffffff;
+    text-decoration: none;
+    background: #240046;
+    padding: 16px 37px;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Creepster', cursive; }
+    .info a:hover {
+      background: #1aff0e;
+      box-shadow: 0 0 10px #00bbf9, 0 0 40px #00bbf9, 0 0 80px #00bbf9;
+      color: #ffffff; }
+
+/*background varias paginas*/
+.background-home {
+  background-image: url("../images/fondo-body-noticias.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+/*bloque noticias publicaciones inicio*/
+.container-card {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  margin: auto; }
+
+.title-cards {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 40px;
+  color: #48e70e;
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
+  text-align: center; }
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 400ms ease-out;
+  cursor: default; }
+  .card:hover {
+    box-shadow: 5px 5px 20px #00bbf9;
+    transform: translateY(-4%); }
+  .card img {
+    width: 100%;
+    height: 210px; }
+  .card .content__card {
+    padding: 15px;
+    text-align: center; }
+    .card .content__card h3 {
+      margin-bottom: 15px;
+      color: #ffc721;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer; }
+    .card .content__card p {
+      line-height: 1.8;
+      color: black;
+      font-size: 14px;
+      margin-bottom: 5px; }
+    .card .content__card a {
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #240046;
+      color: #ffffff;
+      text-decoration-color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      transition: all 400ms ease;
+      margin-bottom: 5px; }
+      .card .content__card a:hover {
+        background: #1aff0e;
+        box-shadow: 0 0 10px #00bbf9, 0 0 40px #00bbf9, 0 0 80px #00bbf9;
+        color: #00bbf9; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-card {
+    flex-wrap: wrap; }
+  .card {
+    margin: 15px; } }
+
+/*galeria-arte*/
+.background-modal-gallery {
+  background-image: url("../image-gallery/background-gallery.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.gallery-text h1 {
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: 'Creepster'; }
+
+.gallery-text p {
+  font-weight: 400;
+  text-align: justify;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: 'Poppins'; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden; }
+  .gallery > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
+  .gallery img {
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s; }
+  .gallery a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3); }
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(8, 128, 249, 0.599);
+  transition: transform .6s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0); }
+  .light-box img {
+    width: 75vw;
+    max-height: 70vh; }
+  .light-box:target {
+    transform: scale(1); }
+
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #240046;
+  color: #ffffff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  animation: pulse 5s infinite; }
+  .close:hover {
+    transform: scale(1.33); }
+
+.next {
+  display: block;
+  background: #240046;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center; }
+
+.conteiner-shop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../images-shop/fondo-tienda.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.card-shop {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px; }
+  .card-shop .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.6s; }
+  .card-shop .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000; }
+    .card-shop .front img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: fill; }
+    .card-shop .front h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      background: rgba(46, 12, 215, 0.486);
+      font-size: 2em;
+      text-align: center; }
+  .card-shop .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #240046;
+    padding: 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 5px 5px #ffc721; }
+    .card-shop .back .link {
+      font-size: 2em;
+      height: 50px;
+      line-height: 50px; }
+      .card-shop .back .link a {
+        color: #ffffff;
+        border-color: #ffc721; }
+      .card-shop .back .link :hover {
+        background: #1aff0e;
+        box-shadow: 0 0 10px #00bbf9, 0 0 40px #00bbf9, 0 0 80px #00bbf9;
+        color: #ffffff; }
+    .card-shop .back h3 {
+      font-size: 3em;
+      margin-top: 20px;
+      letter-spacing: 2px;
+      font-family: "Creepster"; }
+    .card-shop .back p {
+      letter-spacing: 1px;
+      font-size: 2em;
+      font-family: "Poppins"; }
+  .card-shop:hover .front {
+    transform: perspective(600px) rotateY(180deg); }
+  .card-shop:hover .back {
+    transform: perspective(600px) rotateY(360deg); }
+
 /*formulario de contactenos*/
 .contact-form-wrapper {
   padding: 100px 0;

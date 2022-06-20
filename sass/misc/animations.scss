@@ -1,3 +1,23 @@
-
+@keyframes banner {
+    0%,
+      20% {
+      background-image: url('../images/banner-imagen-uno.png');
+    }
+  
+    25%,
+      45% {
+      background-image: url('../images/banner-imagen-dos.png');
+    }
+  
+    50%,
+      70% {
+      background-image: url('../images/banner-imagen-tres.png');
+    }
+  
+    75%,
+      100% {
+      background-image: url("../images/banner-imagen-cuatro.png");
+    }
+  }
   
   

@@ -1,0 +1,112 @@
+/*galeria-arte*/
+.background-modal-gallery {
+    background-image: url('../image-gallery/background-gallery.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .gallery-text {
+    h1 {
+      font-weight: 400;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 4rem;
+      color: $color-aleatory;
+      font-family: 'Creepster';
+    }
+  
+    p {
+      font-weight: 400;
+      text-align: justify;
+      font-size: 2rem;
+      color: $color-aleatory;
+      font-family: 'Poppins';
+    }
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+  
+    > a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+  
+    img {
+      width: 100%;
+      vertical-align: top;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+  
+    a:hover img {
+      filter: blur(2px);
+      transform: rotate(10deg) scale(1.3);
+    }
+  }
+  
+  .light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(8, 128, 249, 0.599);
+    transition: transform .6s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+  
+    img {
+      width: 75vw;
+      max-height: 70vh;
+    }
+  
+    &:target {
+      transform: scale(1);
+    }
+  }
+  
+  .close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background:$-color-buttons;
+    color: $color-aleatory;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+  
+    &:hover {
+      transform: scale(1.33);
+    }
+}
+  
+  .next {
+    display: block;
+    background: $-color-buttons;
+    color: $color-aleatory;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+  }
