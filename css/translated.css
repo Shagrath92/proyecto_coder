@@ -192,7 +192,7 @@ li a.active, li a:hover {
     font-size: 4rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'poppins';
     position: relative; }
   .info p {
     color: #ffffff;
@@ -203,11 +203,11 @@ li a.active, li a:hover {
   .info a {
     color: #ffffff;
     text-decoration: none;
-    background: #240046;
+    background: #0c0046;
     padding: 16px 37px;
     display: inline-block;
     border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Creepster';
     font-size: 1.5rem;
     font-family: 'Creepster', cursive; }
     .info a:hover {
@@ -273,7 +273,7 @@ li a.active, li a:hover {
       padding: 10px;
       margin-top: 10px;
       text-decoration: none;
-      background-color: #240046;
+      background-color: #0c0046;
       color: #ffffff;
       text-decoration-color: #ffffff;
       border: 1px solid #ffffff;
@@ -361,7 +361,7 @@ li a.active, li a:hover {
   position: absolute;
   top: 40px;
   right: 40px;
-  background: #240046;
+  background: #0c0046;
   color: #ffffff;
   text-decoration: none;
   width: 40px;
@@ -375,7 +375,7 @@ li a.active, li a:hover {
 
 .next {
   display: block;
-  background: #240046;
+  background: #0c0046;
   color: #ffffff;
   height: 50px;
   width: 50px;
